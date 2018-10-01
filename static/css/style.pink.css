@@ -3555,3 +3555,79 @@ a.list-group-item.active > .badge,
   left: 15px;
   right: 15px;
 }
+/* 
+.pricings {
+  padding: 0;
+  margin-bottom: 40px;
+}
+.pricings .item {
+  list-style-type: none;
+  margin: 0 5px;
+  background: #fff;
+  padding-bottom: 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pricings .item .pricing {
+  position: relative;
+  padding: 20px;
+}
+.pricings .item .pricing:before,
+.pricings .item .pricing:after {
+  content: " ";
+  display: table;
+}
+.pricings .item .pricing:after {
+  clear: both;
+}
+.pricings .item .pricing:before,
+.pricings .item .pricing:after {
+  content: " ";
+  display: table;
+}
+.pricings .item .pricing:after {
+  clear: both;
+}
+.pricings .item .pricing .text {
+  color: #999999;
+  margin-bottom: 40px;
+}
+.pricings .item .pricing .bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 50px;
+}
+.pricings .item .pricing .bottom .icon {
+  color: #c27baa;
+  font-size: 30px;
+  float: left;
+  width: 20%;
+}
+.pricings .item .pricing .name-picture {
+  float: right;
+  width: 80%;
+  text-align: right;
+}
+.pricings .item .pricing .name-picture h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.pricings .item .pricing .name-picture p {
+  color: #999999;
+  margin: 0;
+  font-size: 12px;
+}
+.pricings .item .pricing .name-picture img {
+  float: right;
+  width: 60px;
+  border-radius: 30px;
+  margin-left: 10px;
+} */
