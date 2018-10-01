@@ -1,0 +1,68 @@
+{{ if isset .Site.Params "pricing" }}
+{{ if .Site.Params.pricing.enable }}
+{{ if gt (len .Site.Data.pricing) 0 }}
+<section class="bar background-pentagon no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    {{if isset .Site.Params "pricing.title" }}
+                    <h2>{{ .Site.Params.pricing.title }}</h2>
+                    {{end}}
+                </div>
+
+                <p class="lead">
+                    {{if isset .Site.Params "pricing.subtitle" }}                    
+                    {{ .Site.Params.pricing.subtitle | markdownify }}
+                    {{end}}
+                </p>
+
+                <!-- *** PRICING CAROUSEL *** -->
+
+                <ul class="pricings same-height-row row">
+                    {{ range .Site.Data.pricing }}
+                    <li class="item col-sm-6 col-lg-4 col-lg-offset-1">
+                        {{ if .mostPopular }}
+                        <div class="pricing-most-popular-label">
+                            <img src="/img/most-popular-label.svg"
+                            class="pricing-most-popular-label-icon">
+                            <div class="pricing-most-popular-label-text">MOST POPULAR</div>
+                        </div>
+                        {{ end }}
+                        <div class="pricing same-height-always pricing-box">
+                            <div class="pricing-box-header">
+                                {{ .title }}
+                            </div>
+                            <div class="pricing-box-body-icon">
+                                <img src={{.img}} />
+                            </div>
+                            <div class="pricing-box-price">
+                                <span class="pricing-box-price-currency">{{.currency}}</span>
+                                <span class="pricing-box-price-value">{{.price}}</span>
+                            </div>
+                            <div class="pricing-box-body text">
+                                {{ .text }}
+                            </div>
+                        </div>
+                        <div class="col-12 text-center pricing-cta">
+                            {{ if .isMain }}
+                            <button class="btn btn-template-primary">{{ .cta }}</button>
+                            {{ else }}
+                            <button class="btn btn-template-main">{{ .cta }}</button>
+                            {{ end }}
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+                <!-- /.owl-carousel -->
+
+                <!-- *** PRICING CAROUSEL END *** -->
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}
+{{ end }}

@@ -107,6 +107,13 @@ function sliders () {
       itemsMobile: [480, 1]
     })
 
+    // $('.pricings').owlCarousel({
+    //   items: 2,
+    //   // itemsDesktopSmall: [990, 2],
+    //   itemsTablet: [768, 2],
+    //   itemsMobile: [480, 1]
+    // })
+
     $('.project').owlCarousel({
       navigation: true, // Show next and prev buttons
       navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
